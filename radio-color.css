@@ -1,5 +1,5 @@
 /* code for HTML5 Browser hide radio */
-:root *> input.perso[type="radio"] {
+:root *> input.radiocolor[type="radio"] {
 	display: none;
 }
 
@@ -7,12 +7,12 @@
 	padding: 0;
 }
 
-input.perso[type="radio"]:not(:checked) + label { 
+input.radiocolor[type="radio"]:not(:checked) + label { 
 	background-color: #eee;
 	color: #000;
 }
 
-input.perso[type="radio"]:checked + label { 
+input.radiocolor[type="radio"]:checked + label { 
 	background-color: inherited;
 }
 label{
