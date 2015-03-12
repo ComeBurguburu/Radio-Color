@@ -1,0 +1,39 @@
+/* code for HTML5 Browser hide radio */
+:root *> input.perso[type="radio"] {
+	display: none;
+}
+
+:root *> span.green, span.blue, span.yellow {
+	padding: 0;
+}
+
+input.perso[type="radio"]:not(:checked) + label { 
+	background-color: #eee;
+	color: #000;
+}
+
+input.perso[type="radio"]:checked + label { 
+	background-color: inherited;
+}
+label{
+	display: inline-block;
+	padding: 12px;
+	width: 50px;
+	text-align: center;
+	color: #FFF;
+}
+
+span.yellow{
+	background-color: #C4BB61;
+}
+span.blue  {
+	background-color: #3AA2D0;
+}
+
+span.green {
+	background-color: #65bd63;
+}
+.blue, .yellow, .green{
+	display:inline-block;
+	font-size: 16px;
+}
